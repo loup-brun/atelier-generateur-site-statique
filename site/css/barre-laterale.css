@@ -1,0 +1,74 @@
+/* Barre latérale */
+
+.barre-laterale {
+  font-size: .75rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+@media (min-width: 48rem) {
+  .barre-laterale {
+    display: block;
+  }
+}
+
+
+.barre-laterale__avatar {
+  --avatar-width: 4rem;
+  --avatar-border-width: 0;
+
+  max-width: var(--avatar-width);
+  align-self: flex-start;
+  margin-block-end: 1rem;
+
+  /* Rond parfait */
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  border: var(--avatar-border-width) solid #fff;
+}
+@media (min-width: 48rem) {
+  .barre-laterale__avatar {
+    --avatar-border-width: 7px;
+    --avatar-width: 10rem;
+  }
+}
+
+.barre-laterale__image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.barre-laterale__nom {
+  margin-top: .5rem;
+
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+.barre-laterale__bio {
+  margin-top: .5rem;
+
+  color: #999;
+}
+
+.barre-laterale__liens {
+  margin-top: .5rem;
+
+  display: flex;
+  flex-direction: row;
+  gap: .25rem;
+}
+@media (min-width: 48rem) {
+  .barre-laterale__liens {
+    flex-direction: column;
+  }
+}
+
+.barre-laterale__liens a {
+  display: inline-flex;
+  padding: .15rem 0;
+}

@@ -1,0 +1,67 @@
+############################################################
+# Réglages généraux du site
+############################################################
+
+# Titre du site
+site-title: Jeanne Doret
+
+# Langue
+# définir la langue par défaut pour tous les documents
+# utiliser un code de type ISO 639-1
+# ex. fr, en, es, it
+lang: fr
+
+# Menu de navigation
+# énumération d’items selon le schéma suivant:
+#
+# - label: "LABEL"
+#   url: /ma-page.html
+menu:
+  - label: "Accueil"
+    url: "index.html"
+
+  - label: "CV"
+    url: "cv.html"
+
+  - label: "Contact"
+    url: "contact.html"
+
+# Droits/licence
+droits: 2023 Jeanne Drolet sous licence CC-BY-SA.
+
+# CSS
+# cascade de fichiers CSS (chemins)
+css:
+- css/bolt.css
+- css/ours.css
+- css/barre-laterale.css
+- css/pied-de-page.css
+- css/mes-styles.css
+
+# Métadonnées du profil
+profil:
+
+  # nom complet
+  prenom: Jeanne
+  nom: Doret
+
+  # lien vers une image
+  avatar: 160.svg
+
+  # institution d’attache
+  affiliation: "Université de Montréal"
+
+  # une courte biographie qui résume le parcours
+  bio: |
+    Doctorante en humanités numériques à l’université de Montréal, détentrice d’une maîtrise en histoire de l’art et d’un baccalauréat en études classiques.
+
+  # collection de liens externes
+  liens:
+    - label: GitHub
+      url: https://github.com/
+
+    - label: Twitter
+      url: https://twitter.com/
+
+    - label: ORCID
+      url: https://orcid.org/0000-0000-0000-0000

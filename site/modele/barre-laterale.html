@@ -1,0 +1,28 @@
+<div class="barre-laterale">
+  <figure class="barre-laterale__avatar">
+    <img
+      class="barre-laterale__image"
+      src="$profil.avatar$"
+      alt="avatar"
+    />
+  </figure>
+
+  <div class="barre-laterale__contenu">
+    <div class="barre-laterale__nom">
+      $profil.prenom$ $profil.nom$
+    </div>
+
+    <div class="barre-laterale__bio">
+      $profil.bio$
+    </div>
+
+    <nav class="barre-laterale__liens">
+      $for(profil.liens)$
+      <a
+        href="$it.url$"
+        title="$it.label$"
+      >$it.label$</a>
+      $endfor$
+    </nav>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+/* Ours */
+.ours {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0 1rem;
+
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ancre-principale {
+  display: inline-flex;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+/* Style sur tous les liens de l’ours */
+.ours a {
+  color: #777;
+  text-decoration: none;
+}
+.ours a:hover {
+  text-decoration: underline;
+  color: var(--text);
+}
+
+/* Disposition du menu principal */
+.menu-principal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Liens du menu principal */
+.menu-principal a {
+  display: inline-flex;
+  padding: 1.25rem 0;
+}
