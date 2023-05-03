@@ -2,8 +2,8 @@
 .pied-de-page {
   margin-top: 3rem;
   padding: 1.5rem 1rem;
-  border-top: 1px solid var(--border-color);
-  color: var(--text-erased)
+  border-top: 1px solid var(--couleur-bordure);
+  color: var(--texte-efface);
 }
 
 .pied-de-page__droits {

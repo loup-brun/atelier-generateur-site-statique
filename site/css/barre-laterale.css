@@ -16,23 +16,25 @@
 
 
 .barre-laterale__avatar {
-  --avatar-width: 4rem;
-  --avatar-border-width: 0;
+  --largeur-avatar: 4rem;
+  --avatar-largeur-bordure: 0;
 
-  max-width: var(--avatar-width);
+  max-width: var(--largeur-avatar);
   align-self: flex-start;
   margin-block-end: 1rem;
 
-  /* Rond parfait */
+  /* Ratio 1:1 pour un carré (ou cercle) parfait */
   aspect-ratio: 1;
+  /* 50% pour un cercle */
   border-radius: 50%;
   overflow: hidden;
-  border: var(--avatar-border-width) solid #fff;
+  /* `outline` pour produire une bordure externe */
+  outline: var(--avatar-largeur-bordure) solid #fff;
 }
 @media (min-width: 48rem) {
   .barre-laterale__avatar {
-    --avatar-border-width: 6px;
-    --avatar-width: 12rem;
+    --avatar-largeur-bordure: 6px;
+    --largeur-avatar: auto;
   }
 }
 
@@ -52,7 +54,7 @@
 .barre-laterale__bio {
   margin-top: .25rem;
 
-  color: #999;
+  color: var(--texte-efface);
 }
 .barre-laterale__bio > p {
   /* Les <p> créent beaucoup d’espace -- réduisons */

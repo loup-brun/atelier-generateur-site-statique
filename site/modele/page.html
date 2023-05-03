@@ -85,13 +85,21 @@ $ours.html()$
     $endif$
 
     $if(toc)$
-    <nav id="$idprefix$TOC" role="doc-toc">
-      $if(toc-title)$
-      <h2 id="$idprefix$toc-title">$toc-title$</h2>
+    <details class="table-des-matieres" $if(toc-open)$open$endif$>
+      <summary class="table-des-matieres__entete">
+        $if(toc-title)$
+        $toc-title$
+        $else$
+        Table des matières
+        $endif$
+      </summary>
+
+      <nav id="$idprefix$TOC" class="table-des-matieres__nav" role="doc-toc">
+        $table-of-contents$
+      </nav>
       $endif$
-      $table-of-contents$
-    </nav>
-    $endif$
+    </details>
+
     $body$
     $for(include-after)$
     $include-after$

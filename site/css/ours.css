@@ -7,13 +7,12 @@
   align-items: baseline;
   padding: 0 1rem;
 
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--couleur-bordure);
 }
 /* Ours avec un fond (ajouter cette classe) */
 .ours.avec-fond {
-
-  background-color: #000;
-  color: #fff;
+  background-color: var(--fond-ours);
+  color: var(--couleur-ours);
 
   border-bottom: none;
 }

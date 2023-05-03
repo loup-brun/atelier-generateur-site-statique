@@ -6,25 +6,35 @@ title: Accueil
 
 # description brève de la page pour les moteurs de recherche
 description: | 
-  Page d’accueil personnelle de Jeanne Doret
+  Page d’accueil personnelle de [votre nom ici].
 
+toc: false
 
 ---
 
-## Synopsis
+<!-- Texte généré avec ChatGPT Mar 23 Version -->
+Bonjour! Je suis une étudiante au doctorat dans le domaine des humanités, plus précisément dans le programme de [nom du programme]. Ma recherche se concentre sur [brève description de votre sujet de recherche], et je suis passionnée par l'exploration des idées et des concepts qui façonnent notre compréhension de [votre domaine d'études]. Mon travail de doctorat implique une analyse approfondie de la littérature et de la théorie, ainsi que des recherches de terrain et des entretiens avec des experts dans le domaine. Je suis très enthousiaste à l'idée de contribuer à la communauté académique et de faire avancer notre compréhension de [votre domaine d'études].
 
-```
-pandoc [options] [input-file]…
-```
+## Introduction
 
-## Description
+Présentez brièvement qui vous êtes et quel est votre programme de doctorat. Expliquez pourquoi vous êtes passionné par le sujet de votre recherche et comment vous avez commencé à vous intéresser à ce domaine d'études.
 
-Pandoc is a Haskell library for converting from one markup format to another, and a command-line tool that uses this library.
+## Contexte de recherche
 
-Pandoc can convert between numerous markup and word processing formats, including, but not limited to, various flavors of Markdown, HTML, LaTeX and Word docx. For the full lists of input and output formats, see the --from and --to options below. Pandoc can also produce PDF output: see creating a PDF, below.
+Expliquez le contexte de votre recherche, y compris les questions de recherche qui vous motivent, les travaux antérieurs pertinents dans le domaine et les lacunes dans la littérature que vous espérez combler avec votre propre recherche.
 
-Pandoc’s enhanced version of Markdown includes syntax for tables, definition lists, metadata blocks, footnotes, citations, math, and much more. See below under Pandoc’s Markdown.
+## Méthodologie
 
-Pandoc has a modular design: it consists of a set of readers, which parse text in a given format and produce a native representation of the document (an abstract syntax tree or AST), and a set of writers, which convert this native representation into a target format. Thus, adding an input or output format requires only adding a reader or writer. Users can also run custom pandoc filters to modify the intermediate AST.
+Décrivez votre méthodologie de recherche, y compris les outils et les techniques que vous utilisez pour collecter et analyser des données. Cela peut inclure des entretiens, des enquêtes, des études de cas, des analyses textuelles, etc.
 
-Because pandoc’s intermediate representation of a document is less expressive than many of the formats it converts between, one should not expect perfect conversions between every format and every other. Pandoc attempts to preserve the structural elements of a document, but not formatting details such as margin size. And some document elements, such as complex tables, may not fit into pandoc’s simple document model. While conversions from pandoc’s Markdown to all formats aspire to be perfect, conversions from formats more expressive than pandoc’s Markdown can be expected to be lossy.
+## Résultats préliminaires
+
+Si vous avez déjà commencé votre recherche, vous pouvez discuter de certains des résultats préliminaires que vous avez obtenus jusqu'à présent et de la manière dont ils s'inscrivent dans votre cadre théorique.
+
+## Contributions et implications
+
+Discutez des contributions potentielles de votre recherche à votre domaine d'études, ainsi que des implications pratiques de vos résultats pour les praticiens, les décideurs ou la société en général.
+
+## Plan de travail
+
+Enfin, expliquez où vous en êtes dans votre projet de recherche et quel est votre plan de travail pour les prochaines étapes. Vous pouvez également discuter des défis que vous rencontrez et des stratégies que vous utilisez pour les surmonter.

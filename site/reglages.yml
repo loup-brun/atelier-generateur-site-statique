@@ -3,7 +3,7 @@
 ############################################################
 
 # Titre du site
-site-title: scolaire.loupbrun.ca
+site-title: Mon (petit) site personnel
 
 # Langue
 # définir la langue par défaut pour tous les documents
@@ -25,6 +25,18 @@ menu:
 
   - label: "Contact"
     url: "contact.html"
+
+# Table des matières
+# Les options peuvent aussi être réglées pour chaque document.
+# Note: l’option en ligne de commande `--toc` doit tout de même
+# être donnée à pandoc pour que la TDM soit construite
+
+# afficher ou non la TDM par défaut sur chaque page
+toc: false
+# en-tete qui accompagne la TDM
+toc-title: Table des matières
+# TDM ouverte par défaut
+toc-open: false
 
 # Droits/licence
 droits: Sauf mention contraire, tous les contenus sont publiés sous licence [CC-BY-SA](https://creativecommons.org/licenses/by/4.0/deed.fr).
@@ -53,7 +65,7 @@ profil:
 
   # une courte biographie qui résume le parcours
   bio: |
-    Doctorante en humanités numériques à l’université de Montréal, détentrice d’une maîtrise en histoire de l’art et d’un baccalauréat en études classiques.
+    Étudiante au doctorat dans le domaine des humanités, plus précisément dans le programme de [nom du programme].
 
   # collection de liens externes
   liens:

@@ -17,41 +17,45 @@
  *
  */
 
+/* Variables */
 :root {
 
-  --background-body: #f2f3f4;
-  --background-main: #f1f1f1;
-  --background-inputs: #fcfcfc;
-  --text: #1a1a1a;
-  --text-erased: #888;
-  --heading-color: var(--text);
-  --links: #0f6dff;
+  --fond-document: #f2f3f4;
+  --fond-composant: #dddddd;
+  --fond-inputs: var(--fond-composant);
+  --couleur-texte: #1a1a1a;
+  --texte-efface: #888;
+  --couleur-entetes: var(--couleur-texte);
+  --couleur-liens: #0f6dff;
 
-  --border-color: #cecece;
-  --border-radius: 11px;
-  --highlight-border-radius: 7px;
+  --couleur-bordure: #cecece;
+  --bordure-arrondie: 11px;
+  --bordur-arrondie-surlignement: 7px;
 
-  --focus-highlight: #d6d6d6;
+  --couleur-active: #d6d6d6;
 
-  --yellow-highlight: #fffab7;
-  --shadow-color: #545454;
-  --table-highlight: #f1f1f1;
-  --select-icon-url: url("data:image/svg+xml,%3Csvg width='292' height='292' viewBox='0 0 292 292' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath id='Path' fill='%23222222' stroke='none' d='M 287 69 C 283.606537 65.469971 278.895844 63.513214 274 63.600006 L 18.4 63.600006 C 13.4 63.600006 9.1 65.400009 5.5 69 C 1.984143 72.328568 -0.005267 76.958466 -0 81.800003 C -0 86.800003 1.8 91.100006 5.4 94.699997 L 133.399994 222.600006 C 137 226.200012 141.199997 228 146.199997 228 C 151.199997 228 155.399994 226.200012 159 222.600006 L 287 94.600006 C 290.5 91.100006 292.399994 86.800003 292.399994 81.800003 C 292.399994 76.800003 290.5 72.600006 286.899994 69 Z'/%3E%3C/svg%3E");
+  --couleur-surlignement: #fffab7;
+  --couleur-ombre: #545454;
+  --couleur-surbrillance-table: #e5e5e5;
+  --icone-select: url("data:image/svg+xml,%3Csvg width='292' height='292' viewBox='0 0 292 292' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath id='Path' fill='%23222222' stroke='none' d='M 287 69 C 283.606537 65.469971 278.895844 63.513214 274 63.600006 L 18.4 63.600006 C 13.4 63.600006 9.1 65.400009 5.5 69 C 1.984143 72.328568 -0.005267 76.958466 -0 81.800003 C -0 86.800003 1.8 91.100006 5.4 94.699997 L 133.399994 222.600006 C 137 226.200012 141.199997 228 146.199997 228 C 151.199997 228 155.399994 226.200012 159 222.600006 L 287 94.600006 C 290.5 91.100006 292.399994 86.800003 292.399994 81.800003 C 292.399994 76.800003 290.5 72.600006 286.899994 69 Z'/%3E%3C/svg%3E");
+
+  --fond-ours: #000;
+  --couleur-ours: #fff;
 }
 
 /*
 @media (prefers-color-scheme: dark) {
   :root {
-    --links: #4589ee;
-    --background-body: #0f0f0f;
-    --background-main: #222;
-    --background-inputs: #222;
-    --text: #efefef;
+    --couleur-liens: #4589ee;
+    --fond-document: #0f0f0f;
+    --fond-composant: #222;
+    --fond-inputs: #222;
+    --couleur-texte: #efefef;
     --border: #444;
-    --focus-highlight: #888;
-    --shadow-color: #bebebe;
-    --table-highlight: #222;
-    --select-icon-url: url("data:image/svg+xml,%3Csvg width='292' height='292' viewBox='0 0 292 292' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath id='Path' fill='%23ffffff' stroke='none' d='M 287 69 C 283.606537 65.469971 278.895844 63.513214 274 63.600006 L 18.4 63.600006 C 13.4 63.600006 9.1 65.400009 5.5 69 C 1.984143 72.328568 -0.005267 76.958466 -0 81.800003 C -0 86.800003 1.8 91.100006 5.4 94.699997 L 133.399994 222.600006 C 137 226.200012 141.199997 228 146.199997 228 C 151.199997 228 155.399994 226.200012 159 222.600006 L 287 94.600006 C 290.5 91.100006 292.399994 86.800003 292.399994 81.800003 C 292.399994 76.800003 290.5 72.600006 286.899994 69 Z'/%3E%3C/svg%3E");
+    --couleur-active: #888;
+    --couleur-ombre: #bebebe;
+    --couleur-surbrillance-table: #222;
+    --icone-select: url("data:image/svg+xml,%3Csvg width='292' height='292' viewBox='0 0 292 292' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath id='Path' fill='%23ffffff' stroke='none' d='M 287 69 C 283.606537 65.469971 278.895844 63.513214 274 63.600006 L 18.4 63.600006 C 13.4 63.600006 9.1 65.400009 5.5 69 C 1.984143 72.328568 -0.005267 76.958466 -0 81.800003 C -0 86.800003 1.8 91.100006 5.4 94.699997 L 133.399994 222.600006 C 137 226.200012 141.199997 228 146.199997 228 C 151.199997 228 155.399994 226.200012 159 222.600006 L 287 94.600006 C 290.5 91.100006 292.399994 86.800003 292.399994 81.800003 C 292.399994 76.800003 290.5 72.600006 286.899994 69 Z'/%3E%3C/svg%3E");
   }
 }
 */
@@ -68,8 +72,8 @@ body {
   font-size: 12pt;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue",
     sans-serif;
-  color: var(--text);
-  background: var(--background-body);
+  color: var(--couleur-texte);
+  background: var(--fond-document);
 }
 
 /* Content sectioning */
@@ -84,9 +88,9 @@ aside {
   padding: 0.84rem;
   margin: 0.16rem;
   font-style: italic;
-  color: var(--text);
-  background-color: var(--background-main);
-  border-radius: var(--border-radius);
+  color: var(--couleur-texte);
+  background-color: var(--fond-composant);
+  border-radius: var(--bordure-arrondie);
 }
 
 /* No styles provided */
@@ -127,10 +131,10 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0.5rem;
+  margin-top: 0.5em;
   margin-bottom: 0.5rem;
 
-  color: var(--heading-color);
+  color: var(--couleur-entetes);
 }
 
 h1,
@@ -172,7 +176,7 @@ blockquote:before {
   position: absolute;
   left: 0;
   height: 100%;
-  border-left: 7px solid var(--border-color);
+  border-left: 7px solid var(--couleur-bordure);
   border-radius: 6px;
 }
 
@@ -198,7 +202,8 @@ figure {
 }
 
 hr {
-  border: 2px solid var(--border-color);
+  border: none;
+  border-top: 1px solid var(--couleur-bordure);
 }
 
 ul,
@@ -216,7 +221,7 @@ p {
 
 /* Inline text elements */
 a {
-  color: var(--links);
+  color: var(--couleur-liens);
 }
 
 a:active,
@@ -230,13 +235,13 @@ samp,
 kbd,
 code,
 time {
-  border-radius: var(--highlight-border-radius, 4px);
+  border-radius: var(--bordur-arrondie-surlignement, 4px);
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
 
 mark {
-  background-color: var(--yellow-highlight);
+  background-color: var(--couleur-surlignement);
   padding: 3px 5px;
 }
 
@@ -244,22 +249,22 @@ samp {
   display: inline-block;
   font-weight: bold;
   padding: 10px 20px;
-  background-color: var(--background-main);
-  color: var(--text);
+  background-color: var(--fond-composant);
+  color: var(--couleur-texte);
 }
 
 kbd,
 time {
   padding: 2px 4px;
-  background-color: var(--background-main);
-  color: var(--text);
+  background-color: var(--fond-composant);
+  color: var(--couleur-texte);
 }
 
 code,
 pre {
   font-size: 1em;
   padding: 2px 4px;
-  background: var(--background-main);
+  background: var(--fond-composant);
   border: 1px solid darkgray;
   max-width: fit-content;
   overflow-x: auto;
@@ -274,7 +279,7 @@ pre > code {
 
 pre {
   margin: 0;
-  border-radius: var(--border-radius);
+  border-radius: var(--bordure-arrondie);
 }
 
 sup,
@@ -286,7 +291,7 @@ sub {
 audio,
 img,
 video {
-  border-radius: var(--border-radius);
+  border-radius: var(--bordure-arrondie);
   max-width: 100%;
 }
 
@@ -297,9 +302,9 @@ img {
 /* Tables */
 table {
   width: fit-content;
-  border: 1px solid var(--background-main);
-  background: var(--background-main);
-  border-radius: var(--border-radius);
+  border: 1px solid var(--fond-composant);
+  background: var(--fond-composant);
+  border-radius: var(--bordure-arrondie);
 }
 
 table tr:last-child td:first-child {
@@ -319,11 +324,11 @@ table tr:first-child th:last-child {
 }
 
 th {
-  background-color: var(--background-main);
+  background-color: var(--fond-composant);
 }
 
 td {
-  background: var(--background-body);
+  background: var(--fond-document);
 }
 
 td,
@@ -342,7 +347,7 @@ tfoot {
 
 table tr:hover td,
 tbody tr:nth-child(even):hover td {
-  background-color: var(--table-highlight);
+  background-color: var(--couleur-surbrillance-table);
 }
 
 /* Form elements */
@@ -365,8 +370,8 @@ input[type="radio"] {
 }
 
 button {
-  color: var(--text);
-  background-color: var(--background-main);
+  color: var(--couleur-texte);
+  background-color: var(--fond-composant);
   font-family: inherit;
   font-size: inherit;
   padding: 6px 15px 6px 15px;
@@ -377,13 +382,13 @@ button {
 
 button:active {
   box-shadow: none;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--couleur-bordure);
 }
 
 button:disabled,
 button[disabled] {
   box-shadow: none;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--couleur-bordure);
   cursor: initial;
   opacity: 0.55;
 }
@@ -395,12 +400,12 @@ label {
 
 input {
   font-size: 1em;
-  background-color: var(--background-inputs);
-  border: 1px solid var(--border-color);
-  color: var(--text);
+  background-color: var(--fond-inputs);
+  border: 1px solid var(--couleur-bordure);
+  color: var(--couleur-texte);
   margin: 6px 0px;
   padding: 11px;
-  border-radius: var(--border-radius);
+  border-radius: var(--bordure-arrondie);
   max-width: fit-content;
   outline: none;
   display: inline-block;
@@ -425,8 +430,8 @@ input[type="radio"] {
 
 input[type="checkbox"]:checked,
 input[type="radio"]:checked {
-  border: 1px solid var(--links);
-  background: var(--links);
+  border: 1px solid var(--couleur-liens);
+  background: var(--couleur-liens);
 }
 
 input[type="checkbox"]:checked {
@@ -445,11 +450,11 @@ input[type="range"] {
 textarea {
   font-family: inherit;
   font-size: 1em;
-  background-color: var(--background-inputs);
-  border: 1px solid var(--border-color);
+  background-color: var(--fond-inputs);
+  border: 1px solid var(--couleur-bordure);
   padding: 11px;
-  color: var(--text);
-  border-radius: var(--border-radius);
+  color: var(--couleur-texte);
+  border-radius: var(--bordure-arrondie);
   outline: none;
   /* resize: none;  Todo: research if there is a non-js way to style/move grippie */
   max-width: 100%;
@@ -459,17 +464,17 @@ select {
   display: inline-block;
   vertical-align: middle;
   font-size: 1rem;
-  color: var(--text);
+  color: var(--couleur-texte);
   padding: 0.6em 2em 0.5em 0.8em;
   margin: 6px 0px;
   max-width: fit-content;
   box-sizing: border-box;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--couleur-bordure);
   box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
   border-radius: 0.5em;
   appearance: none;
-  background-color: var(--background-inputs);
-  background-image: var(--select-icon-url);
+  background-color: var(--fond-inputs);
+  background-image: var(--icone-select);
   background-repeat: no-repeat, repeat;
   background-position: right 0.7em top 50%, 0 0;
   background-size: 0.65em auto, 100%;
@@ -485,14 +490,14 @@ fieldset:focus-within,
 input:focus-within,
 textarea:focus-within,
 select:focus-within {
-  border-color: var(--focus-highlight);
+  border-color: var(--couleur-active);
 }
 
 fieldset:hover,
 input:hover,
 textarea:hover,
 select:hover {
-  border-color: var(--focus-highlight);
+  border-color: var(--couleur-active);
 }
 
 meter {
@@ -507,23 +512,23 @@ progress {
 }
 
 progress::-webkit-progress-bar {
-  background: var(--background-main);
+  background: var(--fond-composant);
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2) inset;
-  border-radius: var(--highlight-border-radius);
+  border-radius: var(--bordur-arrondie-surlignement);
 }
 
 progress::-webkit-progress-value {
-  background-color: var(--links);
-  border-radius: var(--highlight-border-radius);
+  background-color: var(--couleur-liens);
+  border-radius: var(--bordur-arrondie-surlignement);
 }
 
 progress::-moz-progress-bar {
-  background-color: var(--links);
-  border-radius: var(--highlight-border-radius);
+  background-color: var(--couleur-liens);
+  border-radius: var(--bordur-arrondie-surlignement);
 }
 
 fieldset {
-  border: 1px var(--border-color) solid;
+  border: 1px var(--couleur-bordure) solid;
   border-radius: 6px;
   margin: 0;
   margin-bottom: 6px;
@@ -533,7 +538,7 @@ fieldset {
 
 /* Interactive elements */
 details {
-  border: 1px solid #aaa;
+  border: 1px solid var(--couleur-bordure);
   border-radius: 7px;
   padding: 0.5em 0.5em 0;
 }
@@ -542,6 +547,10 @@ summary {
   font-weight: bold;
   margin: -0.5em -0.5em 0;
   padding: 0.5em;
+
+  /* garder un pointeur normal et ne pas sélectionner le texte */
+  cursor: default;
+  user-select: none;
 }
 
 details[open] {

@@ -9,12 +9,12 @@ main {
   gap: 1rem;
 }
 
-/* À partir d’une certaine largeur... */
+/* Disposition adaptative à partir d’une certaine largeur... */
 @media (min-width: 48rem) {
   main {
     margin: 3rem auto;
     gap: 2rem;
-    grid-template-columns: [contenu-secondaire] 12rem [contenu-principal] minmax(30rem, 52rem);
+    grid-template-columns: [contenu-secondaire] 14rem [contenu-principal] minmax(30rem, 52rem);
   }
   main .disposition-secondaire {
     grid-column-start: contenu-secondaire;
@@ -29,17 +29,32 @@ main {
 
 .en-tete {
   margin-bottom: 2rem;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--couleur-bordure);
 }
 
+.table-des-matieres {
+  margin-block-start: 1rem;
+  margin-block-end: 2rem;
+}
 
-/* Pour créer un contenant de type «carte» */
+.hanging-indent {
+  text-indent: -2rem;
+  margin-left: 2rem;
+}
+.csl-entry {
+  /* ajouter un peu d’espace entre les entrées */
+  margin-bottom: .5rem;
+}
+
+/*
+Pour créer un contenant de type «carte»
+*/
 /*
 .contenu-principal {
   --marge-interieure: 1rem;
 
   background-color: var(--fond-contenu-principal, #fff);
-  border-radius: var(--border-radius);
+  border-radius: var(--bordure-arrondie);
   border: 1px solid var(--border-color);
   box-shadow: 0 8px 8px -3px rgba(0, 0, 0, .1);
 }
