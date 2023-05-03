@@ -4,33 +4,19 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 
-  <title>Accueil - Jeanne Doret</title>
+  <title>Accueil | scolaire.loupbrun.ca</title>
 
   <!-- Colophon -->
   <meta name="generator" content="pandoc" />
 
           <meta name="description" content="Page d’accueil personnelle de Jeanne Doret" />
   
-  <!-- Styles -->
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: auto; overflow-x: auto;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    ul.task-list li input[type="checkbox"] {
-      width: 0.8em;
-      margin: 0 0.8em 0.2em -1.6em;
-      vertical-align: middle;
-    }
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-  </style>
+  <!-- Styles, chemins spécifiés dans les métadonnées -->
     <link rel="stylesheet" href="css/bolt.css" />
-    <link rel="stylesheet" href="css/ours.css" />
     <link rel="stylesheet" href="css/barre-laterale.css" />
     <link rel="stylesheet" href="css/pied-de-page.css" />
-    <link rel="stylesheet" href="css/mes-styles.css" />
+    <link rel="stylesheet" href="css/page.css" />
+    <link rel="stylesheet" href="css/ours.css" />
   
   <!-- Il est possible d’inclure d’autres éléments dans l’en-tête -->
   
@@ -44,14 +30,14 @@
 <body>
 
 <!-- Ours -->
-<header class="ours">
+<header class="ours avec-fond">
   <!-- Titre principal -->
   <a
     class="ancre-principale"
     href="."
-    title="Jeanne Doret"
+    title="scolaire.loupbrun.ca"
   >
-    Jeanne Doret
+    scolaire.loupbrun.ca
   </a>
 
   <!-- Menu principal -->
@@ -71,14 +57,14 @@
       </nav>
 </header>
 <!-- Disposition générale -->
-<main>
+<main class="page">
   <!-- Barre latérale -->
   <div class="contenu-secondaire">
     <div class="barre-laterale">
       <figure class="barre-laterale__avatar">
         <img
           class="barre-laterale__image"
-          src="160.svg"
+          src="profil.svg"
           alt="avatar"
         />
       </figure>
@@ -118,7 +104,38 @@
       <h1 class="en-tete__titre">Accueil</h1>
                             </header>
     
-        <p>Ceci est la page personnelle de Jeanne Doret.</p>
+        <h2 id="synopsis">Synopsis</h2>
+        <pre><code>pandoc [options] [input-file]…</code></pre>
+        <h2 id="description">Description</h2>
+        <p>Pandoc is a Haskell library for converting from one markup
+        format to another, and a command-line tool that uses this
+        library.</p>
+        <p>Pandoc can convert between numerous markup and word
+        processing formats, including, but not limited to, various
+        flavors of Markdown, HTML, LaTeX and Word docx. For the full
+        lists of input and output formats, see the –from and –to options
+        below. Pandoc can also produce PDF output: see creating a PDF,
+        below.</p>
+        <p>Pandoc’s enhanced version of Markdown includes syntax for
+        tables, definition lists, metadata blocks, footnotes, citations,
+        math, and much more. See below under Pandoc’s Markdown.</p>
+        <p>Pandoc has a modular design: it consists of a set of readers,
+        which parse text in a given format and produce a native
+        representation of the document (an abstract syntax tree or AST),
+        and a set of writers, which convert this native representation
+        into a target format. Thus, adding an input or output format
+        requires only adding a reader or writer. Users can also run
+        custom pandoc filters to modify the intermediate AST.</p>
+        <p>Because pandoc’s intermediate representation of a document is
+        less expressive than many of the formats it converts between,
+        one should not expect perfect conversions between every format
+        and every other. Pandoc attempts to preserve the structural
+        elements of a document, but not formatting details such as
+        margin size. And some document elements, such as complex tables,
+        may not fit into pandoc’s simple document model. While
+        conversions from pandoc’s Markdown to all formats aspire to be
+        perfect, conversions from formats more expressive than pandoc’s
+        Markdown can be expected to be lossy.</p>
       </article>
 </main>
 
@@ -126,22 +143,9 @@
 <footer class="pied-de-page">
 
   <div class="pied-de-page__droits">
-    2023 Jeanne Drolet sous licence CC-BY-SA.
+    Sauf mention contraire, tous les contenus sont publiés sous licence
+    <a
+    href="https://creativecommons.org/licenses/by/4.0/deed.fr">CC-BY-SA</a>.
   </div>
-</footer>
-
-
-<style>
-  .pied-de-page {
-    margin-top: 3rem;
-    padding: 2rem 1rem;
-    border-top: 1px solid var(--border-color);
-    background-color: #ddd;
-    color: #999;
-  }
-
-  .pied-de-page__droits {
-    font-size: .75rem;
-  }
-</style></body>
+</footer></body>
 </html>

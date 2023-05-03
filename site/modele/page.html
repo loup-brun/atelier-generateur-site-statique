@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
 
-  <title>$if(title-prefix)$$title-prefix$ – $endif$$pagetitle$ - $site-title$</title>
+  <title>$if(title-prefix)$$title-prefix$ | $endif$$pagetitle$ | $site-title$</title>
 
   <!-- Colophon -->
   <meta name="generator" content="pandoc" />
@@ -22,10 +22,7 @@
   <meta name="description" content="$description-meta$" />
   $endif$
 
-  <!-- Styles -->
-  <style>
-    $styles.html()$
-  </style>
+  <!-- Styles, chemins spécifiés dans les métadonnées -->
   $for(css)$
   <link rel="stylesheet" href="$css$" />
   $endfor$
@@ -54,7 +51,7 @@
 $ours.html()$
 
 <!-- Disposition générale -->
-<main>
+<main class="page">
   <!-- Barre latérale -->
   <div class="contenu-secondaire">
     $barre-laterale.html()$

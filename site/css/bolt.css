@@ -18,18 +18,22 @@
  */
 
 :root {
-  --highlight-border-radius: 7px;
-  --border-radius: 11px;
-  --yellow-highlight: #fffab7;
 
-  --links: #0f6dff;
-  --background-body: #edededed;
-  --background-main: orange;
-  --border-color: #d2d2d2;
+  --background-body: #f2f3f4;
+  --background-main: #f1f1f1;
   --background-inputs: #fcfcfc;
-  --text: #1c1d1e;
-  --border: #dddddd;
-  --focus-highlight: #b8b8b8;
+  --text: #1a1a1a;
+  --text-erased: #888;
+  --heading-color: var(--text);
+  --links: #0f6dff;
+
+  --border-color: #cecece;
+  --border-radius: 11px;
+  --highlight-border-radius: 7px;
+
+  --focus-highlight: #d6d6d6;
+
+  --yellow-highlight: #fffab7;
   --shadow-color: #545454;
   --table-highlight: #f1f1f1;
   --select-icon-url: url("data:image/svg+xml,%3Csvg width='292' height='292' viewBox='0 0 292 292' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath id='Path' fill='%23222222' stroke='none' d='M 287 69 C 283.606537 65.469971 278.895844 63.513214 274 63.600006 L 18.4 63.600006 C 13.4 63.600006 9.1 65.400009 5.5 69 C 1.984143 72.328568 -0.005267 76.958466 -0 81.800003 C -0 86.800003 1.8 91.100006 5.4 94.699997 L 133.399994 222.600006 C 137 226.200012 141.199997 228 146.199997 228 C 151.199997 228 155.399994 226.200012 159 222.600006 L 287 94.600006 C 290.5 91.100006 292.399994 86.800003 292.399994 81.800003 C 292.399994 76.800003 290.5 72.600006 286.899994 69 Z'/%3E%3C/svg%3E");
@@ -92,23 +96,23 @@ header {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.25rem;
 }
 
 h2 {
-  font-size: 2rem;
-}
-
-h3 {
   font-size: 1.75rem;
 }
 
-h4 {
+h3 {
   font-size: 1.5rem;
 }
 
-h5 {
+h4 {
   font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1.125rem;
   font-weight: normal;
 }
 
@@ -125,6 +129,8 @@ h5,
 h6 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+
+  color: var(--heading-color);
 }
 
 h1,
@@ -166,7 +172,7 @@ blockquote:before {
   position: absolute;
   left: 0;
   height: 100%;
-  border-left: 7px solid var(--border);
+  border-left: 7px solid var(--border-color);
   border-radius: 6px;
 }
 
@@ -192,7 +198,7 @@ figure {
 }
 
 hr {
-  border: 2px solid var(--border);
+  border: 2px solid var(--border-color);
 }
 
 ul,
@@ -371,13 +377,13 @@ button {
 
 button:active {
   box-shadow: none;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
 }
 
 button:disabled,
 button[disabled] {
   box-shadow: none;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   cursor: initial;
   opacity: 0.55;
 }
@@ -390,7 +396,7 @@ label {
 input {
   font-size: 1em;
   background-color: var(--background-inputs);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   color: var(--text);
   margin: 6px 0px;
   padding: 11px;
@@ -440,7 +446,7 @@ textarea {
   font-family: inherit;
   font-size: 1em;
   background-color: var(--background-inputs);
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   padding: 11px;
   color: var(--text);
   border-radius: var(--border-radius);
@@ -458,7 +464,7 @@ select {
   margin: 6px 0px;
   max-width: fit-content;
   box-sizing: border-box;
-  border: 1px solid var(--border);
+  border: 1px solid var(--border-color);
   box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
   border-radius: 0.5em;
   appearance: none;
@@ -517,7 +523,7 @@ progress::-moz-progress-bar {
 }
 
 fieldset {
-  border: 1px var(--border) solid;
+  border: 1px var(--border-color) solid;
   border-radius: 6px;
   margin: 0;
   margin-bottom: 6px;

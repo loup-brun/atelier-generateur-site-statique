@@ -9,6 +9,14 @@
 
   border-bottom: 1px solid var(--border-color);
 }
+/* Ours avec un fond (ajouter cette classe) */
+.ours.avec-fond {
+
+  background-color: #000;
+  color: #fff;
+
+  border-bottom: none;
+}
 
 .ancre-principale {
   display: inline-flex;
@@ -18,12 +26,11 @@
 
 /* Style sur tous les liens de l’ours */
 .ours a {
-  color: #777;
+  color: inherit;
   text-decoration: none;
 }
 .ours a:hover {
   text-decoration: underline;
-  color: var(--text);
 }
 
 /* Disposition du menu principal */

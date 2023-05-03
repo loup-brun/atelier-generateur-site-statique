@@ -1,0 +1,56 @@
+/* Disposition générale */
+main {
+  width: 80rem;
+  max-width: 96%;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+
+  display: grid;
+  gap: 1rem;
+}
+
+/* À partir d’une certaine largeur... */
+@media (min-width: 48rem) {
+  main {
+    margin: 3rem auto;
+    gap: 2rem;
+    grid-template-columns: [contenu-secondaire] 12rem [contenu-principal] minmax(30rem, 52rem);
+  }
+  main .disposition-secondaire {
+    grid-column-start: contenu-secondaire;
+  }
+  main .contenu-principal {
+    grid-column-start: contenu-principal;
+  }
+}
+.contenu-principal {
+  overflow: auto; /* lorsque des éléments enfants deviennent trop larges */
+}
+
+.en-tete {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+
+/* Pour créer un contenant de type «carte» */
+/*
+.contenu-principal {
+  --marge-interieure: 1rem;
+
+  background-color: var(--fond-contenu-principal, #fff);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 8px 8px -3px rgba(0, 0, 0, .1);
+}
+.contenu-principal > * {
+  margin-inline-start: var(--marge-interieure);
+  margin-inline-end: var(--marge-interieure);
+}
+.contenu-principal > :first-child {
+  margin-block-start: var(--marge-interieure, 1rem);
+}
+.contenu-principal > :last-child {
+  margin-block-end: var(--marge-interieure, 1rem);
+}
+*/

@@ -1,4 +1,11 @@
 /* Pied-de-page */
 .pied-de-page {
+  margin-top: 3rem;
+  padding: 1.5rem 1rem;
+  border-top: 1px solid var(--border-color);
+  color: var(--text-erased)
+}
 
+.pied-de-page__droits {
+  font-size: .75rem;
 }

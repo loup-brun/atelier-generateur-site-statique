@@ -3,7 +3,7 @@
 ############################################################
 
 # Titre du site
-site-title: Jeanne Doret
+site-title: scolaire.loupbrun.ca
 
 # Langue
 # définir la langue par défaut pour tous les documents
@@ -27,16 +27,16 @@ menu:
     url: "contact.html"
 
 # Droits/licence
-droits: 2023 Jeanne Drolet sous licence CC-BY-SA.
+droits: Sauf mention contraire, tous les contenus sont publiés sous licence [CC-BY-SA](https://creativecommons.org/licenses/by/4.0/deed.fr).
 
 # CSS
-# cascade de fichiers CSS (chemins)
+# fichiers en cascade! (indiquer les chemins vers les fichiers CSS)
 css:
-- css/bolt.css
-- css/ours.css
+- css/bolt.css # bolt.css utilisé pour les styles de base
 - css/barre-laterale.css
 - css/pied-de-page.css
-- css/mes-styles.css
+- css/page.css
+- css/ours.css
 
 # Métadonnées du profil
 profil:
@@ -46,7 +46,7 @@ profil:
   nom: Doret
 
   # lien vers une image
-  avatar: 160.svg
+  avatar: profil.svg
 
   # institution d’attache
   affiliation: "Université de Montréal"
@@ -59,7 +59,6 @@ profil:
   liens:
     - label: GitHub
       url: https://github.com/
-
     - label: Twitter
       url: https://twitter.com/
 
