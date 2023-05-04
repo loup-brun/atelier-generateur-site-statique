@@ -44,7 +44,7 @@ droits: Sauf mention contraire, tous les contenus sont publiés sous licence [CC
 # CSS
 # fichiers en cascade! (indiquer les chemins vers les fichiers CSS)
 css:
-- css/bolt.css # bolt.css utilisé pour les styles de base
+- css/general.css # bolt.css utilisé pour les styles de base: https://boltcss.com/
 - css/barre-laterale.css
 - css/pied-de-page.css
 - css/page.css
