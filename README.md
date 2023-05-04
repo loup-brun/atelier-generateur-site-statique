@@ -2,17 +2,17 @@
 
 Une recette pour fabriquer une page web (ou deux…) bien à soi, grâce à Pandoc!
 
-Note : cette recette n’est pas destinée à produire des sites web complexes avec des sous-sections.
-
 Taille idéale du site : entre 1 et 5 pages.
+
+(Note : cette recette n’est pas adaptée pour les sites avec des sections.)
 
 ## Prérequis
 
 Connaissances de base :
 
-- Markdown [_séance debugue sur le balisage_](https://debugue.ecrituresnumeriques.ca/seance-01-langages-de-balisage/)
-- HTML [séance débugue sur HTML](https://debugue.ecrituresnumeriques.ca/seance-01-langages-de-balisage/)
-- CSS [séance debugue sur CSS](https://debugue.ecrituresnumeriques.ca/seance-02-introduction-css/)
+- Markdown ([séance debugue sur le balisage](https://debugue.ecrituresnumeriques.ca/seance-01-langages-de-balisage/))
+- HTML ([séance débugue sur HTML](https://debugue.ecrituresnumeriques.ca/seance-01-langages-de-balisage/))
+- CSS ([séance debugue sur CSS](https://debugue.ecrituresnumeriques.ca/seance-02-introduction-css/))
 
 Boîte à outils :
 
