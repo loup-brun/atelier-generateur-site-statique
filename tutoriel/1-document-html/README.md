@@ -1,4 +1,4 @@
-# 1. Création d’une page web
+# Création d’une page web
 
 Une page web, c’est un fichier HTML. 
 

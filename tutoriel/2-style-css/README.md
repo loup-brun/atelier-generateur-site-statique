@@ -1,4 +1,4 @@
-# 2. Ajout d’une feuille de style CSS
+# Ajout d’une feuille de style CSS
 
 Pandoc permet de spécifier des feuilles de style CSS à appliquer à notre document.
 
