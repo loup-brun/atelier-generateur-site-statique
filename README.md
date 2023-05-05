@@ -6,13 +6,11 @@ Taille idéale du site : entre 1 et 5 pages.
 
 (Note : cette recette n’est pas adaptée pour les sites avec des sections.)
 
-Suivez d’abord l’exercice (dans le dossier `tutoriel/`), puis frottez-vous à un petit site personnel!
-
 ## Prérequis
 
 Connaissances de base :
 
-- Markdown ([séance debugue sur le balisage](https://debugue.ecrituresnumeriques.ca/seance-01-langages-de-balisage/))
+- Markdown ([séance débugue sur le balisage](https://debugue.ecrituresnumeriques.ca/seance-01-langages-de-balisage/))
 - HTML ([séance débugue sur HTML](https://debugue.ecrituresnumeriques.ca/seance-01-langages-de-balisage/))
 - CSS ([séance debugue sur CSS](https://debugue.ecrituresnumeriques.ca/seance-02-introduction-css/))
 
@@ -22,6 +20,9 @@ Boîte à outils :
 - un éditeur de texte
 - [pandoc](https://pandoc.org/installing.html)
 - [make](https://www.gnu.org/software/make/) (optionnel, voir [ce billet](https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages) pour l’installation des outils en ligne de commande)
+
+## Tutoriel
+Suivez d’abord l’exercice (dans le dossier [`tutoriel/`](tutoriel)), puis frottez-vous à un petit site personnel!
 
 ## Commandes
 
