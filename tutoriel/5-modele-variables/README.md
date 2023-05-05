@@ -12,7 +12,7 @@ touch _modele.html
 ```
 
 <details>
-<summary>Exemple de contenu pour le modèle HTML</summary>
+<summary><h3>Exemple de contenu pour le modèle HTML</h3></summary>
 
 ```html
 <!DOCTYPE html>
@@ -164,7 +164,7 @@ Vos fichiers devraient avoir être produits!
 Nous avons réussi à automatiser la fabrique de nos fichiers `accueil.html`, `page-1.html`, etc.; sauf que si nous renommons nos fichiers (par exemple : `accueil.md` => `index.md`) ou que nous en créons un nouveau (`page-4.html`), notre script ne sera plus à jour! Pouvons-nous faire quelque chose?
 
 <details>
-<summary>Nouveau contenu du fichier <code>site.sh</code></summary>
+<summary><h3>Nouveau contenu du fichier <code>site.sh</code></h3></summary>
 
 ```shell
 #!/bin/bash
