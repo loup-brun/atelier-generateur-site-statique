@@ -210,4 +210,4 @@ all
 
 ---
 
-Tutoriel terminé? Frottez-vous au petit site)!
+Tutoriel terminé? Frottez-vous au petit site!
