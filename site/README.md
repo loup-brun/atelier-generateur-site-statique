@@ -17,11 +17,11 @@ Cette section est désignée à être réalisée en atelier; le présent README 
 
 ## Commandes
 
-Pour commencer, se déplacer dans le répertoire `6-site` avec le terminal :
+Pour commencer, se déplacer dans le répertoire `site` avec le terminal :
 
 ```shell
 # à partir de la racine du projet
-cd tutoriel/6-site
+cd site
 ```
 
 Utiliser `make` pour lancer des commandes (si `make` est installé) :
