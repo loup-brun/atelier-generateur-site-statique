@@ -27,3 +27,9 @@ Relançons la commande Pandoc :
 ```shell
 pandoc --standalone page.md -o page.html
 ```
+
+Admirez le résultat avec votre feuille de style appliquée!
+
+---
+
+Prochaine étape : [Plusieurs pages HTML](../3-plusieurs-pages)

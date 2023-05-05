@@ -4,7 +4,7 @@ C’est un peu répetitif d’indiquer les mêmes variables dans plusieurs fichi
 
 ## Création d’un fichier de métadonnées unique
 
-Nous allons référer nos variables communes dans un nouveau fichier de type [YAML](https://fr.wikipedia.org/wiki/YAML). (Vous pouvez utiliser l’extension `.yml` ou `.yaml`; assurez-vous simplement de conserver le même choix par la suite.)
+Nous allons référer nos variables communes dans un nouveau fichier de type [YAML](https://yaml.org/). (Vous pouvez utiliser l’extension `.yml` ou `.yaml`; assurez-vous simplement de conserver le même choix par la suite.)
 N’ayez crainte, ce format correspond simplement à celui des métadonnées que vous inscriviez dans l’en-tête d’un fichier markdown.
 
 Créez le fichier `variables.yml` :

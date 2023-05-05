@@ -25,20 +25,18 @@ On se rappelle, le HTML est une ensemble de paires de balises ouvrantes/fermante
 
 </details>
 
-~~Créons un nouveau fichier avec l’extension correspondante : `page.html`.~~
-
-C’est un peu verbeux… n’y aurait-il pas un autre format de balisage léger qui nous permettrait d’arriver au même résultat?
+~~Créons un nouveau fichier `page.html`~~ éditer un fichier HTML à la main, c’est un peu verbeux… n’y aurait-il pas un autre format de balisage léger qui nous permettrait d’arriver au même résultat?
 
 ## Markdown
 
-Créons plutôt un fichier markdown, avec l’extension `md`.
+Créons plutôt un fichier markdown, avec l’extension `.md` :
 
-```touch
+```shell
 # dans le terminal, créer un fichier vide
 touch page.md
 ```
 
-Ajoutons un peu de contenu à ce fichier.
+Ajoutons un peu de contenu à ce fichier. Ouvrez `page.md` pour édition.
 
 ```markdown
 # Titre de mon document
@@ -85,3 +83,7 @@ date: 2023-05-24
 ```
 
 Relançons la commande et voyons le résultat!
+
+---
+
+Prochaine étape : [ajouter une feuille de style](../2-style-css)
