@@ -17,7 +17,7 @@ Bonjour! Je suis une étudiante au doctorat dans le domaine des humanités, plus
 
 ## Introduction
 
-Présentez brièvement qui vous êtes et quel est votre programme de doctorat. Expliquez pourquoi vous êtes passionné par le sujet de votre recherche et comment vous avez commencé à vous intéresser à ce domaine d'études.
+Présentez brièvement qui vous êtes et quel est votre programme de doctorat. Expliquez pourquoi vous êtes passionné par le sujet de votre recherche et comment vous avez commencé à vous intéresser à ce domaine d'études[^note1].
 
 ## Contexte de recherche
 
@@ -38,3 +38,6 @@ Discutez des contributions potentielles de votre recherche à votre domaine d'é
 ## Plan de travail
 
 Enfin, expliquez où vous en êtes dans votre projet de recherche et quel est votre plan de travail pour les prochaines étapes. Vous pouvez également discuter des défis que vous rencontrez et des stratégies que vous utilisez pour les surmonter.
+
+<!-- Notes -->
+[^note1]: Une note de bas de page.

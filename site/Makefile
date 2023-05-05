@@ -13,7 +13,7 @@ modele/page.html: modele/barre-laterale.html modele/pied-de-page.html modele/our
 	@echo "Modifications à prendre en compte pour $@..."
 	touch $@
 
-# Recette pour transformer tous les fichiers markdwon en HTML
+# Recette pour transformer tous les fichiers markdown en HTML
 %.html: %.md reglages.yml modele/page.html
 	pandoc $(OPTIONS_PANDOC) $< -o $@
 

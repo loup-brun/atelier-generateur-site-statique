@@ -54,8 +54,8 @@ css:
 profil:
 
   # nom complet
-  prenom: Jeanne
-  nom: Doret
+  prenom: Maria
+  nom: Chapdelaine
 
   # lien vers une image
   avatar: profil.svg

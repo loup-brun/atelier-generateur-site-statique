@@ -18,6 +18,7 @@
 .barre-laterale__avatar {
   --largeur-avatar: 4rem;
   --avatar-largeur-bordure: 0;
+  --couleur-bordure-avatar: #fff;
 
   max-width: var(--largeur-avatar);
   align-self: flex-start;
@@ -29,7 +30,7 @@
   border-radius: 50%;
   overflow: hidden;
   /* `outline` pour produire une bordure externe */
-  outline: var(--avatar-largeur-bordure) solid #fff;
+  outline: var(--avatar-largeur-bordure) solid var(--couleur-bordure-avatar);
 }
 @media (min-width: 48rem) {
   .barre-laterale__avatar {

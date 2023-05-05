@@ -13,8 +13,8 @@ main {
 @media (min-width: 48rem) {
   main {
     margin: 3rem auto;
-    gap: 2rem;
-    grid-template-columns: [contenu-secondaire] 14rem [contenu-principal] minmax(30rem, 52rem);
+    gap: 3rem;
+    grid-template-columns: [contenu-secondaire] 12.5rem [contenu-principal] minmax(30rem, 52rem);
   }
   main .disposition-secondaire {
     grid-column-start: contenu-secondaire;
@@ -43,9 +43,8 @@ main {
 }
 .csl-entry {
   /* ajouter un peu d’espace entre les entrées */
-  margin-bottom: .5rem;
+  margin-bottom: 1rem;
 }
-
 /*
 Pour créer un contenant de type «carte»
 */
@@ -53,9 +52,9 @@ Pour créer un contenant de type «carte»
 .contenu-principal {
   --marge-interieure: 1rem;
 
-  background-color: var(--fond-contenu-principal, #fff);
+  background-color: var(--fond-carte);
   border-radius: var(--bordure-arrondie);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--couleur-bordure);
   box-shadow: 0 8px 8px -3px rgba(0, 0, 0, .1);
 }
 .contenu-principal > * {

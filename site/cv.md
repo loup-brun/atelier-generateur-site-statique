@@ -49,5 +49,5 @@ Depuis 2018
 
 ## Publications
 
-::: {#refs .avec-indentation}
+::: {#refs}
 :::
