@@ -90,8 +90,7 @@ $endfor$
 Pour utiliser le fichier modèle avec Pandoc, utilisez l’option `--template [fichier]`.
 
 ```shell
-# les barres obliques inversées servent uniquement à 
-# poursuivre la commande à la ligne suivante
+# les barres obliques servent à écrire la même commande sur plusieurs lignes
 pandoc --template _modele.html \
        --metadata-file variables.yml \
        --standalone \
