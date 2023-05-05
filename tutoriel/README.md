@@ -7,3 +7,4 @@ Voici les fichiers du tutoriel en quelques étapes.
 3. [Plusieurs pages HTML](3-plusieurs-pages)
 4. [Un fichier de métadonnées](4-fichier-metadonnees)
 5. [Un modèle avec des variables](5-modele-variables)
+6. [Un petit site personnel](6-site)

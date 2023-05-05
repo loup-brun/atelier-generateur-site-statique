@@ -210,4 +210,4 @@ all
 
 ---
 
-Tutoriel terminé? Frottez-vous au petit site!
+Prochaine étape : [Frottez-vous au petit site!](../6-site)
