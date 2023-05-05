@@ -1,6 +1,6 @@
-# Option avancée ; gérer son propre modèle HTML
+# Option avancée : gérer son propre modèle HTML
 
-Utilisez la pleine puissance des variables et des modèles!
+Utilisez la pleine puissance des variables et des modèles! Ce principe est à la base de tous les générateurs de site web –– statiques ou non.
 
 [Modèle HTML de base utilisé par Pandoc](https://github.com/jgm/pandoc/blob/main/data/templates/default.html5)
 
