@@ -86,4 +86,4 @@ Relançons la commande et voyons le résultat!
 
 ---
 
-Prochaine étape : [ajouter une feuille de style](../2-style-css)
+Prochaine étape : [Ajouter une feuille de style](../2-style-css)

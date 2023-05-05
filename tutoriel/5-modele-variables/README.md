@@ -100,3 +100,106 @@ pandoc --template _modele.html \
        
 # ... évidemment, répéter pour chaque fichier à transformer en HTML
 ```
+
+## Un script pour éviter la répétition
+
+Toute cette répétition est bien fastidieuse! Ne pourrait-on pas simplifier toutes ces commandes répétitives en une seule?
+
+Créons un fichier shell `site.sh` :
+
+```shell
+touch site.sh
+```
+
+Une première manière simple serait de retranscrire nos commandes pour chaque page que nous souhaitons convertir. Commençons par cela, le gain de temps se fera déjà sentir!
+
+<details>
+<summary>Contenu du fichier <code>site.sh</code></summary>
+
+```bash
+#!/bin/bash
+
+# `echo` est utilisé pour avoir un retour de l’activité qui se déroule dans la console
+echo "Production du fichier accueil.html..."
+pandoc --template _modele.html \
+       --metadata-file variables.yml \
+       --standalone \
+       accueil.md \
+       -o accueil.html
+
+echo "Production du fichier page-1.html..."
+pandoc --template _modele.html \
+       --metadata-file variables.yml \
+       --standalone \
+       page-1.md \
+       -o page-1.html
+
+# ... et ainsi de suite
+```
+
+</details>
+
+C’est un peu long. On pourrait réunir les options passées à Pandoc dans une variable, `OPTIONS_PANDOC` :
+
+```bash
+OPTIONS_PANDOC="--template _modele.html --metadata-file variables.yml --standalone"
+```
+
+… et l’utiliser ainsi dans votre script :
+
+```bash
+pandoc $OPTIONS_PANDOC [source] -o [sortie]
+```
+
+Sauvegardez votre script. Dans votre terminal, essayez de l’appeler :
+
+```shell
+bash site.sh
+```
+
+Vos fichiers devraient avoir être produits!
+
+## Pour aller un peu plus loin…
+
+Nous avons réussi à automatiser la fabrique de nos fichiers `accueil.html`, `page-1.html`, etc.; sauf que si nous renommons nos fichiers (par exemple : `accueil.md` => `index.md`) ou que nous en créons un nouveau (`page-4.html`), notre script ne sera plus à jour! Pouvons-nous faire quelque chose?
+
+```shell
+#!/bin/bash
+
+# Aller chercher tous les fichiers source (markdown)
+SOURCE=$(find . -iname "*.md" -not -iname "README*" -maxdepth 1)
+# Énoncer les contreparties HTML
+HTML=$(find . -iname "*.html" -not -iname "README*" -not -iname "_modele*" -maxdepth 1)
+# options pour pandoc
+OPTIONS_PANDOC="--to html --standalone --metadata-file=variables.yml --template _modele.html --toc --citeproc"
+
+function clean() {
+  echo ">*Nettoyage des fichiers HTML..."
+  for i in $HTML; do
+    echo "  rm $i"
+    rm $i;
+  done
+  echo "" # produire une ligne vide dans la sortie de la console
+}
+
+function html() {
+  cd $(pwd)
+
+  echo "* Fabrication des fichiers HTML..."
+  for i in $SOURCE; do
+    echo "  Conversion de $i"
+    pandoc $OPTIONS_PANDOC $i -o ${i/.md/.html};
+  done;
+  echo "" # produire une ligne vide dans la sortie de la console
+}
+
+function all() {
+  clean
+  html
+
+  echo "Terminé!"
+}
+
+# et on lance la fonction `all` (qui fait tout)
+all
+```

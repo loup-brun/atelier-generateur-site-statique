@@ -3,7 +3,7 @@
 # Aller chercher tous les fichiers source (markdown)
 SOURCE=$(find . -iname "*.md" -not -iname "README*" -maxdepth 1)
 # Énoncer les contreparties HTML
-HTML=$(find . -iname "*.html" -not -iname "README*" -maxdepth 1)
+HTML=$(find . -iname "*.html" -not -iname "README*" -note -iname "modele*" -maxdepth 1)
 # options pour pandoc
 OPTIONS_PANDOC="--to html --standalone --metadata-file=reglages.yml --template=modele/page.html --toc --citeproc"
 
@@ -27,7 +27,7 @@ OPTIONS_PANDOC="--to html --standalone --metadata-file=reglages.yml --template=m
 #	rm $(HTML)
 
 function clean() {
-  echo "> Nettoyage des fichiers HTML..."
+  echo "* Nettoyage des fichiers HTML..."
   echo ""
   for i in $HTML; do
     echo "rm $i"
@@ -37,7 +37,7 @@ function clean() {
 }
 
 function html() {
-  echo "> Fabrication des fichiers HTML..."
+  echo "* Fabrication des fichiers HTML..."
   echo ""
   for i in $SOURCE; do
     echo "Conversion de $i"

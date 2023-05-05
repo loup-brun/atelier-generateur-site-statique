@@ -1,6 +1,6 @@
 # Plusieurs pages HTML : vers un premier « site »
 
-Pour notre projet, créons une série de pages HTML :
+Pour notre projet, créons une série de pages :
 
 ```shell
 touch accueil.md \
