@@ -1,6 +1,8 @@
-# Répertoire pour le site
+# Un (petit) site personnel
 
-Tout ce qu’il faut pour fabriquer son propre site en HTML.
+Si vous avez réussi à parcourir toutes les étapes du tutoriel, bravo! Vous avez acquis un savoir exceptionnel qui vous permettra de mettre en place votre propre petit site web statique.
+
+Cette section est désignée à être réalisée en atelier; le présent README sera donc moins didactique.
 
 ## Explication des fichiers
 
@@ -12,3 +14,31 @@ Tout ce qu’il faut pour fabriquer son propre site en HTML.
 - `site.sh` : format alternatif de recette en bash si vous n’avez pas `make`.
 - `css/` : répertoire des feuilles de style CSS (l’assaisonnement, la peinture et le vernis).
 - `modele/` : répertoire des fichiers de modèle HTML (nos moules à gâteau, nos blocs Lego).
+
+## Commandes
+
+Pour commencer, se déplacer dans le répertoire `6-site` avec le terminal :
+
+```shell
+# à partir de la racine du projet
+cd tutoriel/6-site
+```
+
+Utiliser `make` pour lancer des commandes (si `make` est installé) :
+
+```shell
+# fabriquer les fichiers HTML
+make all
+
+# nettoyer les fichiers HTML construits
+make clean
+
+# commande par défaut, qui fait clean + all
+make
+```
+
+Si vous n’avez pas make, le petit script shell fera l’affaire :
+
+```shell
+./site.sh  # ou encore: `bash site.sh`
+```

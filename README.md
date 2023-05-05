@@ -2,7 +2,7 @@
 
 ![Capture d’écran](apercu.png)
 
-Une recette pour fabriquer une page web (ou deux…) bien à soi, grâce à Pandoc!
+Une recette pour fabriquer un espace web bien à soi, grâce à Pandoc!
 
 Taille idéale du site : entre 1 et 5 pages.
 
@@ -25,33 +25,6 @@ Boîte à outils :
 
 ## Tutoriel
 Suivez d’abord l’exercice dans le dossier [`tutoriel/`](tutoriel), puis frottez-vous à un petit site personnel!
-
-## Commandes
-
-Pour commencer, se déplacer dans le répertoire `site` :
-
-```shell
-cd site
-```
-
-Utiliser `make` pour lancer des commandes (si `make` est installé) :
-
-```shell
-# fabriquer les fichiers HTML
-make all
-
-# nettoyer les fichiers HTML construits
-make clean
-
-# commande par défaut, qui fait clean + all
-make
-```
-
-Si vous n’avez pas make, le petit script shell fera l’affaire :
-
-```shell
-./site.sh  # ou encore: `bash site.sh`
-```
 
 ## Pour aller plus loin
 
