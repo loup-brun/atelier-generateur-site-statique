@@ -28,7 +28,7 @@ Suivez d’abord l’exercice dans le dossier [`tutoriel/`](tutoriel), puis frot
 
 ## Commandes
 
-Pour commencer se déplacer dans le répertoire `site` :
+Pour commencer, se déplacer dans le répertoire `site` :
 
 ```shell
 cd site
@@ -50,7 +50,7 @@ make
 Si vous n’avez pas make, le petit script shell fera l’affaire :
 
 ```shell
-./site.sh # ou encore: `bash site.sh`
+./site.sh  # ou encore: `bash site.sh`
 ```
 
 ## Pour aller plus loin
