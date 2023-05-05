@@ -114,7 +114,7 @@ touch site.sh
 Une première manière simple serait de retranscrire nos commandes pour chaque page que nous souhaitons convertir. Commençons par cela, le gain de temps se fera déjà sentir!
 
 <details>
-<summary>Contenu du fichier <code>site.sh</code></summary>
+<summary><h3>Contenu du fichier <code>site.sh</code></h3></summary>
 
 ```bash
 #!/bin/bash
