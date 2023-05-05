@@ -163,6 +163,9 @@ Vos fichiers devraient avoir être produits!
 
 Nous avons réussi à automatiser la fabrique de nos fichiers `accueil.html`, `page-1.html`, etc.; sauf que si nous renommons nos fichiers (par exemple : `accueil.md` => `index.md`) ou que nous en créons un nouveau (`page-4.html`), notre script ne sera plus à jour! Pouvons-nous faire quelque chose?
 
+<details>
+<summary>Nouveau contenu du fichier <code>site.sh</code></summary>
+
 ```shell
 #!/bin/bash
 
@@ -203,3 +206,9 @@ function all() {
 # et on lance la fonction `all` (qui fait tout)
 all
 ```
+
+</details>
+
+---
+
+Tutoriel terminé? Frottez-vous au petit [site](../..)!
