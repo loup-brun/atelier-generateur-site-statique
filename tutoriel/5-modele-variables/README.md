@@ -144,13 +144,13 @@ C’est un peu long. On pourrait réunir les options passées à Pandoc dans une
 OPTIONS_PANDOC="--template _modele.html --metadata-file variables.yml --standalone"
 ```
 
-… et l’utiliser ainsi dans votre script :
+… et l’utiliser ainsi dans le script :
 
 ```bash
 pandoc $OPTIONS_PANDOC [source] -o [sortie]
 ```
 
-Sauvegardez votre script. Dans votre terminal, essayez de l’appeler :
+Lorsque vous aurez terminé les substitutions, sauvegardez votre script. Dans votre terminal, essayez de l’appeler comme ceci :
 
 ```shell
 bash site.sh
