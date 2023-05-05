@@ -1,6 +1,6 @@
 # Créer son (petit) site personnel avec Pandoc
 
-![Capture d’écran](apecu.png)
+![Capture d’écran](apercu.png)
 
 Une recette pour fabriquer une page web (ou deux…) bien à soi, grâce à Pandoc!
 
