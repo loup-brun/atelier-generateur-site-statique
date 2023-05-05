@@ -53,7 +53,7 @@ Si vous n’avez pas make, le petit script shell fera l’affaire :
 
 ## Pour aller plus loin
 
-Il existe une myriade de générateurs de sites statiques : [Yst](https://github.com/jgm/yst), [Jekyll](https://jekyllrb.com/), [Hakyll](https://jaspervdj.be/hakyll/), [Hugo](https://gohugo.io/). On peut aussi apprendre d’initiatives personnelles, comme celle de l’historien Caleb McDaniel et son [script bash](https://github.com/wcaleb/website). La bonne nouvelle, c’est que les contenus rédigés en markdown peuvent être trivialement transférés d’un système à l’autre. Chaque système vient avec ses forces, ses faiblesses, ses solutions et sa complexité. À vous, lecteur curieux, [d’explorer ce monde](https://jamstack.org/generators/)…
+Il existe une myriade de générateurs de sites statiques : [Yst](https://github.com/jgm/yst), [Jekyll](https://jekyllrb.com/), [Hakyll](https://jaspervdj.be/hakyll/), [Hugo](https://gohugo.io/). On peut aussi apprendre d’initiatives personnelles, comme celle de l’historien Caleb McDaniel et son [script bash](https://github.com/wcaleb/website). La bonne nouvelle, c’est que les contenus rédigés en markdown peuvent être trivialement transférés d’un système à l’autre. Chaque système vient avec ses forces, ses faiblesses, ses solutions et sa complexité. À vous, lecteur·trice curieux·euse, [de poursuivre votre exploration](https://jamstack.org/generators/)…
 
 ## Licence
 
