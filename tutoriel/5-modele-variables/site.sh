@@ -17,8 +17,6 @@ function clean() {
 }
 
 function html() {
-  cd $(pwd)
-
   echo "* Fabrication des fichiers HTML..."
   for i in $SOURCE; do
     echo "  Conversion de $i"

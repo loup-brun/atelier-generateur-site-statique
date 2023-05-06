@@ -11,20 +11,20 @@ function clean() {
   echo "* Nettoyage des fichiers HTML..."
   echo ""
   for i in $HTML; do
-    echo "rm $i"
+    echo "  rm $i"
     rm $i;
   done
-  echo ""
+  echo "" # produire une ligne vide dans la sortie de la console
 }
 
 function html() {
   echo "* Fabrication des fichiers HTML..."
   echo ""
   for i in $SOURCE; do
-    echo "Conversion de $i"
+    echo "  Conversion de $i"
     pandoc $OPTIONS_PANDOC $i -o ${i/.md/.html};
   done;
-  echo ""
+  echo "" # produire une ligne vide dans la sortie de la console
 }
 
 function all() {
@@ -34,4 +34,5 @@ function all() {
   echo "Terminé!"
 }
 
+# et on lance la fonction `all` (qui fait tout)
 all
