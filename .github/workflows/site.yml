@@ -8,9 +8,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # create the slideshow as a regular index.html file
+      - uses: docker://pandoc/core
+
       - name: Fabriquer le HTML
-        uses: docker://pandoc/core
         run: cd site && make 
 
       - name: Deploy
