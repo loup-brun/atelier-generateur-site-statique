@@ -16,7 +16,7 @@ touch _modele.html
 
 ```html
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="$lang$">
 <head>
   <meta charset="utf-8" />
 
@@ -24,20 +24,20 @@ touch _modele.html
   <title>$pagetitle$</title>
 
   <!-- Auteur -->
-  <!-- Note: la variable `author-meta` est géré par pandoc, utilisez `author` dans vos fichiers d’écriture -->
+  <!-- Note: la variable `author-meta` est gérée par pandoc, utilisez `author` dans vos fichiers d’écriture -->
   $for(author-meta)$
   <meta name="author" content="$author-meta$" />
   $endfor$
 
   <!-- Date -->
-  <!-- Note: la variable `date-meta` est géré par pandoc, utilisez `date` dans vos fichiers d’écriture -->
+  <!-- Note: la variable `date-meta` est gérée par pandoc, utilisez `date` dans vos fichiers d’écriture -->
   $if(date-meta)$
   <meta name="dcterms.date" content="$date-meta$" />
   $endif$
 
   <!-- Description -->
   $if(description-meta)$
-  <!-- Note: la variable `description-meta` est géré par pandoc, utilisez `description` dans vos fichiers d’écriture -->
+  <!-- Note: la variable `description-meta` est gérée par pandoc, utilisez `description` dans vos fichiers d’écriture -->
   <meta name="description" content="$description-meta$" />
   $endif$
 
