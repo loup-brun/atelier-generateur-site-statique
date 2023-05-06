@@ -63,7 +63,7 @@ include-after:
 
 ## Un petit plus pour le style…
 
-Enfin, nous pouvons faire appel à une feuille de style externe, à tout hasard almond.css pour rendre notre document plus joli.
+Enfin, nous pouvons faire appel à une feuille de style externe, à tout hasard [almond.css](https://alvaromontoro.github.io/almond.css/) pour rendre notre document plus joli.
 
 ```yaml
 css:
