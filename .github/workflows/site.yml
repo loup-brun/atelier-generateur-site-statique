@@ -3,17 +3,12 @@ name: Site
 on: push
 
 jobs:
-  convert_via_pandoc:
+  servir_les_fichiers:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
 
-      - uses: docker://pandoc/core
-
-      - name: Fabriquer le HTML
-        run: cd site && make 
-
-      - name: Deploy
+      - name: Déploiement
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
