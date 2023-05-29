@@ -1,15 +1,18 @@
-# Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages
+# Workflow simple pour déployer des fichiers statiques vers le service GitHub Pages
+# copié depuis le créateur d’actions GitHub
+
+# Nom pour affichage de la tâche dans l’interface web
+name: Déployer des fichiers statiques vers GitHub Pages
 
 on:
-  # Runs on pushes targeting the default branch
+  # Les branches pour lesquelles déclencher ce workflow
   push:
     branches: ["main"]
 
-  # Allows you to run this workflow manually from the Actions tab
+  # Allows you to run this workflow manually from the Actions tab (autogénéré)
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Permissions du GITHUB_TOKEN pour permettre le déploiement GitHub Pages (autogénéré)
 permissions:
   contents: read
   pages: write
@@ -22,23 +25,24 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
+  # Une seule tâche, car nous ne faisons que déployer
   deploy:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    # étapes (auto-généré)
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Setup Pages
+      - name: Préparer les pages
         uses: actions/configure-pages@v3
-      - name: Upload artifact
+      - name: Téléverser les artéfacts
         uses: actions/upload-pages-artifact@v1
         with:
-          # Upload entire repository
-          # ... or just the `site` subdir
+          # Téléverser tout le dépôt...
+          # ... ou juste le répertoire `site`
           path: './site'
-      - name: Deploy to GitHub Pages
+      - name: Déployer vers GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
