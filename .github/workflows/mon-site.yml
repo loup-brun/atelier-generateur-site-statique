@@ -49,7 +49,7 @@ jobs:
         id: upload
         with:
           # name -> pour la prochaine étape
-          name: site
+          name: public
           path: ./site
 
   deploy:
@@ -62,8 +62,7 @@ jobs:
 
     steps:
       - name: Déployer sur GitHub Pages
-        id: deploy
-        uses: actions/deploy-pages@v2
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          # `artifact_name` pour correspondre avec upload artifact
-          artifact_name: site
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: public
