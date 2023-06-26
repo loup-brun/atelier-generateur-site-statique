@@ -46,7 +46,8 @@ jobs:
         name: Téléverser les artefacts
         id: upload
         with:
-          name: output
+          # name -> pour la prochaine étape
+          name: github-pages
           path: ./site
 
       - name: Déployer sur GitHub Pages
