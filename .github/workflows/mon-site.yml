@@ -44,18 +44,21 @@ jobs:
         id: build
         run: bash site/site.sh
 
-      - uses: actions/upload-artifact@v3
-        name: Téléverser les artefacts
-        id: upload
-        with:
-          # name -> pour la prochaine étape
-          name: public
-          path: ./site
+#      - uses: actions/upload-artifact@v3
+#        name: Téléverser les artefacts
+#        id: upload
+#        with:
+#          # name -> pour la prochaine étape
+#          name: site
+#          path: ./site
 
   deploy:
 
     # Add a dependency to the build job
     needs: build
+
+    permissions:
+      contents: write
 
     # idem (voir bloc plus haut)
     runs-on: ubuntu-22.04
@@ -65,4 +68,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: public
+          publish_dir: site
