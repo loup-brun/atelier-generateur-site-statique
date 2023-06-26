@@ -1,5 +1,8 @@
 name: Déployer des fichiers statiques vers GitHub Pages
 
+env:
+  ACTIONS_STEP_DEBUG: true
+
 on: push
 #  # Les branches pour lesquelles déclencher ce workflow
 #  push:
