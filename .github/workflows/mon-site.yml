@@ -47,9 +47,11 @@ jobs:
         id: upload
         with:
           # name -> pour la prochaine étape
-          name: github-pages
+          name: site
           path: ./site
 
       - name: Déployer sur GitHub Pages
         id: deploy
         uses: actions/deploy-pages@v2
+        with:
+          artifact_name: site
