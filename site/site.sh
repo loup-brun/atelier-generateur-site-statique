@@ -3,7 +3,7 @@
 # Aller chercher tous les fichiers source (markdown)
 SOURCE=$(find . -iname "*.md" -not -iname "README*" -maxdepth 1)
 # Énoncer les contreparties HTML
-HTML=$(find . -iname "*.html" -not -iname "README*" -note -iname "modele*" -maxdepth 1)
+HTML=$(find . -iname "*.html" -not -iname "README*" -not -iname "modele*" -maxdepth 1)
 # options pour pandoc
 OPTIONS_PANDOC="--to html --standalone --metadata-file=reglages.yml --template=modele/page.html --toc --citeproc"
 
