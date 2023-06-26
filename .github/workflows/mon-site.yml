@@ -15,7 +15,8 @@ permissions:
   id-token: write
 
 jobs:
-  convert_via_pandoc:
+  build:
+
     # Image Ubuntu
     # La version doit être mise à jour pour tenir compte du
     # cycle de vie des distributions d’Ubuntu. Il est possible
@@ -26,6 +27,7 @@ jobs:
     # Ubuntu Release Cycle:
     # https://ubuntu.com/about/release-cycle
     runs-on: ubuntu-22.04
+
     steps:
       - uses: actions/checkout@v3
 
@@ -42,7 +44,7 @@ jobs:
         id: build
         run: bash site/site.sh
 
-      - uses: actions/upload-artifact@v1
+      - uses: actions/upload-artifact@v3
         name: Téléverser les artefacts
         id: upload
         with:
@@ -50,8 +52,15 @@ jobs:
           name: site
           path: ./site
 
+  deploy:
+
+    # idem (voir bloc plus haut)
+    runs-on: ubuntu-22.04
+
+    steps:
       - name: Déployer sur GitHub Pages
         id: deploy
         uses: actions/deploy-pages@v2
         with:
+          # `artifact_name` pour correspondre avec upload artifact
           artifact_name: site
