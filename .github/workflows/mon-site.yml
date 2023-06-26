@@ -42,7 +42,7 @@ jobs:
         id: build
         run: bash site/site.sh
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v1
         name: Téléverser les artefacts
         id: upload
         with:
