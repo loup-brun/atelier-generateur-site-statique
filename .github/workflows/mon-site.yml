@@ -54,6 +54,9 @@ jobs:
 
   deploy:
 
+    # Add a dependency to the build job
+    needs: build
+
     # idem (voir bloc plus haut)
     runs-on: ubuntu-22.04
 
