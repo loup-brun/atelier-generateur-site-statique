@@ -1,3 +1,0 @@
----
-title: Mes publications
----
