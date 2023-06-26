@@ -37,7 +37,7 @@ jobs:
 
       - name: Construire le site
         id: build
-        run: bash site.sh
+        run: bash site/site.sh
 
       - uses: actions/upload-artifact@v3
         name: Téléverser les artefacts
