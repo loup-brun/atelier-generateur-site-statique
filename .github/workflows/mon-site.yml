@@ -1,9 +1,9 @@
 name: Déployer des fichiers statiques vers GitHub Pages
 
-on:
-  # Les branches pour lesquelles déclencher ce workflow
-  push:
-    branches: ["main"]
+#on:
+#  # Les branches pour lesquelles déclencher ce workflow
+#  push:
+#    branches: ["main"]
 
 # Permissions du GITHUB_TOKEN pour permettre le déploiement GitHub Pages (autogénéré)
 permissions:
