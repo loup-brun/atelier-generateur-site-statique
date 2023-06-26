@@ -1,6 +1,6 @@
 name: Déployer des fichiers statiques vers GitHub Pages
 
-#on:
+on: push
 #  # Les branches pour lesquelles déclencher ce workflow
 #  push:
 #    branches: ["main"]
